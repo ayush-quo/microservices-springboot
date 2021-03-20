@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   currency-exchange-service:
-    image: microservices-v2/currency-exchange-service:0.0.1-SNAPSHOT
+    image: ayush1608/currency-exchange-service:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
       - "8000:8000"
@@ -19,7 +19,7 @@ services:
       SPRING_ZIPKIN_SENDER_TYPE: rabbit
 
   currency-conversion-service:
-    image: microservices-v2/currency-conversion-service:0.0.1-SNAPSHOT
+    image: ayush1608/currency-conversion-service:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
       - "8100:8100"
@@ -36,7 +36,7 @@ services:
       SPRING_ZIPKIN_SENDER_TYPE: rabbit
 
   api-gateway:
-    image: microservices-v2/api-gateway:0.0.1-SNAPSHOT
+    image: ayush1608/api-gateway:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
       - "8765:8765"
@@ -53,7 +53,7 @@ services:
       SPRING_ZIPKIN_SENDER_TYPE: rabbit
 
   naming-server:
-    image: microservices-v2/naming-server:0.0.1-SNAPSHOT
+    image: ayush1608/naming-server:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
       - "8761:8761"
